@@ -1,10 +1,5 @@
+# **Behavioral Cloning** 
 
-
-
-#**Behavioral Cloning** 
-
-
----
 
 **Behavioral Cloning Project**
 
@@ -16,20 +11,11 @@ The goals / steps of this project are the following:
  - Train and validate the model with a training 
  - Test that the model successfully drives around track one without leaving the road
 
-[//]: # (Image References)
-
-[image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
 
 ---
-###Files Submitted & Code Quality
+### Files Submitted & Code Quality
 
-####1. Submission includes all required files and can be used to run the simulator in autonomous mode
+#### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
 
@@ -38,19 +24,19 @@ My project includes the following files:
  - model.h5 containing a trained convolution neural network   
  - writeup_report.md
 
-####2. Submission includes functional code
+#### 2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
 ```sh
 python drive.py model.h5
 ```
 
-####3. Submission code is usable and readable
+#### 3. Submission code is usable and readable
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. Solution Design Approach
+#### 1. Solution Design Approach
 
 My first approach was to construct an architecture that could make the car drive at least a little bit with the provided data by the resource files. I started with a really simple network and evolved to LeNet, then I kept adding augmentation techniques and pre process the images to verify what could make the solution better. 
 
@@ -66,7 +52,7 @@ One final modification that resulted in a big change in the way the car drives w
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
-####2. Final Model Architecture
+#### 2. Final Model Architecture
 
 This is the final architecture of my model:
 
@@ -91,7 +77,7 @@ This is the final architecture of my model:
  19. A dropout layer with 0.5
  20. A Dense layer with 1
 
-####3. Creation of the Training Set & Training Process
+#### 3. Creation of the Training Set & Training Process
 
 The first three laps were driven in the normal direction of the road and in the center: 
 
